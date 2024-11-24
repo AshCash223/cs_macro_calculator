@@ -4,44 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Nutrition Input Form</title>
-  
+    <title>The Walkout: Amateur Boxing Diet Planner</title>
 </head>
 <body>
 
-    <div class="banner">
-        <h2>Nutritional Planner</h2>
-        <p>Input your details to create a personalized weight-cutting plan.</p>
+    <!-- Video Background -->
+    <div class="video-container">
+        <video autoplay loop muted playsinline>
+            <source src="video/Short Boxing Cinematic..mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
     </div>
 
-    <div class="content">
-        <p>Optimize your nutrition and enhance your performance with tailored recommendations based on your current and target weight.</p>
+    <!-- Main Content with Overlay -->
+    <div class="overlay">
+        <header class="banner">
+            <h1>The Walkout: Amateur Boxing Diet Planner 🥊💥</h1>
+            <p>Fuel Your Fight, Unleash Your Power!</p>
+        </header>
+
+        <main class="content">
+            <section>
+                <p>Welcome to the Amateur Boxing Diet Planner, your essential tool for maintaining peak performance in and out of the ring. Designed specifically for boxers, this planner ensures your nutrition supports consistent training, recovery, and competition readiness.</p>
+                <p>Receive expert nutritional advice tailored to your training intensity and goals. With the right plan, you’ll stay energized, focused, and ready to dominate your next fight.</p>
+            </section>
+
+            <section class="form-section">
+                <h2>Input Your Details</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="current-weight">Current Weight (kg):</label>
+                        <input type="number" id="current-weight" name="current-weight" placeholder="Enter your current weight" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="target-weight">Target Weight (kg):</label>
+                        <input type="number" id="target-weight" name="target-weight" placeholder="Enter your fight weight" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="age">Age:</label>
+                        <input type="number" id="age" name="age" placeholder="Enter your age" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="activity-level">Training Intensity:</label>
+                        <select id="activity-level" name="activity-level" required>
+                            <option value="light">Light Training (1-2 sessions/week)</option>
+                            <option value="moderate">Moderate Training (3-4 sessions/week)</option>
+                            <option value="intense">Intense Training (5-6 sessions/week)</option>
+                            <option value="competition">Competition Prep (7+ sessions/week)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit">Generate Plan</button>
+                    </div>
+                </form>
+            </section>
+        </main>
     </div>
 
-    <form>
-        <div>
-            <label for="current-weight">Current Weight (kg):</label>
-            <input type="number" id="current-weight" name="current-weight" required>
-        </div>
-
-        <div>
-            <label for="target-weight">Target Weight (kg):</label>
-            <input type="number" id="target-weight" name="target-weight" required>
-        </div>
-
-        <div>
-            <label for="activity-level">Activity Level:</label>
-            <select id="activity-level" name="activity-level" required>
-                <option value="sedentary">Sedentary</option>
-                <option value="light">Lightly Active</option>
-                <option value="moderate">Moderately Active</option>
-                <option value="active">Active</option>
-            </select>
-        </div>
-
-        <div>
-            <button type="submit">Submit</button>
-        </div>
-    </form>
 </body>
 </html>
